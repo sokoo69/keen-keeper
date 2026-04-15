@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Johnson",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "alex.johnson@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university during freshman year. We bonded over late-night study sessions and now share a love for hiking and craft beer.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Chen",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "sarah.chen@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "My first manager at the company. She taught me everything about product management. We still catch up over coffee every few weeks.",
+    "goal": 14,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 3,
+    "name": "Marcus Williams",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "m.williams@protonmail.com",
+    "days_since_contact": 42,
+    "status": "overdue",
+    "tags": ["childhood", "best friend"],
+    "bio": "Grew up on the same street. We built forts in backyards and now build startups. Despite the distance, he's still my go-to person for big life decisions.",
+    "goal": 30,
+    "next_due_date": "2026-03-15"
+  },
+  {
+    "id": 4,
+    "name": "Priya Patel",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "priya.patel@yahoo.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["college", "travel"],
+    "bio": "Study abroad roommate in Barcelona. We explored 8 countries together in one semester and have been inseparable travel partners ever since.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 5,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "david.kim@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["work", "gym"],
+    "bio": "Met at a tech conference three years ago. We now work out together every Tuesday and Thursday morning before the workday starts.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 6,
+    "name": "Emma Rodriguez",
+    "picture": "https://randomuser.me/api/portraits/women/26.jpg",
+    "email": "emma.rodriguez@icloud.com",
+    "days_since_contact": 27,
+    "status": "overdue",
+    "tags": ["family", "close friend"],
+    "bio": "Childhood best friend who feels more like a sister. We drifted apart during college but reconnected at a mutual friend's wedding and never looked back.",
+    "goal": 21,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 7,
+    "name": "Liam O'Brien",
+    "picture": "https://randomuser.me/api/portraits/men/53.jpg",
+    "email": "liam.obrien@hotmail.com",
+    "days_since_contact": 8,
+    "status": "almost due",
+    "tags": ["hobby", "music"],
+    "bio": "Band member from my local jam sessions. We play guitar together every Sunday and he pushes me to get better at songwriting.",
+    "goal": 10,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 8,
+    "name": "Aisha Okonkwo",
+    "picture": "https://randomuser.me/api/portraits/women/90.jpg",
+    "email": "aisha.okonkwo@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["book club", "neighbor"],
+    "bio": "Neighbor who turned into a dear friend through our monthly book club. She has incredible taste in literature and always challenges my thinking.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 9,
+    "name": "James Park",
+    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "email": "james.park@gmail.com",
+    "days_since_contact": 35,
+    "status": "overdue",
+    "tags": ["college", "startup"],
+    "bio": "My co-founder from a startup we built together during senior year. Even though the startup didn't last, our friendship became one of my strongest.",
+    "goal": 21,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 10,
+    "name": "Nina Johansson",
+    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "email": "nina.johansson@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["work", "design"],
+    "bio": "Designer I collaborated with on a year-long project. Her attention to detail and creative vision completely changed how I approach problem-solving.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  }
+]
