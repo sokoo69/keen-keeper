@@ -9,9 +9,6 @@ import {
   Trash2,
   Edit2,
   Mail,
-  Target,
-  CalendarDays,
-  User,
 } from "lucide-react";
 import toast from "react-hot-toast";
 import { addTimelineEntry } from "@/lib/timelineStore";
@@ -158,20 +155,17 @@ export default function FriendDetailPage() {
         <div className="flex flex-col gap-5">
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-white rounded-2xl border border-[#E9E9E9] p-4 flex flex-col items-center gap-1 shadow-sm">
-              <User size={18} className="text-[#94A3B8] mb-1" />
-              <span className="text-2xl font-black text-[#1a1a1a]">
+              <span className="text-2xl font-black text-[#244D3F]">
                 {friend.days_since_contact}
               </span>
               <span className="text-xs text-[#94A3B8] text-center">Days Since Contact</span>
             </div>
             <div className="bg-white rounded-2xl border border-[#E9E9E9] p-4 flex flex-col items-center gap-1 shadow-sm">
-              <Target size={18} className="text-[#94A3B8] mb-1" />
-              <span className="text-2xl font-black text-[#1a1a1a]">{goalValue}</span>
+              <span className="text-2xl font-black text-[#244D3F]">{goalValue}</span>
               <span className="text-xs text-[#94A3B8] text-center">Goal (Days)</span>
             </div>
             <div className="bg-white rounded-2xl border border-[#E9E9E9] p-4 flex flex-col items-center gap-1 shadow-sm">
-              <CalendarDays size={18} className="text-[#94A3B8] mb-1" />
-              <span className="text-lg font-black text-[#1a1a1a] text-center leading-tight">
+              <span className="text-lg font-black text-[#244D3F] text-center leading-tight">
                 {formatDate(friend.next_due_date)}
               </span>
               <span className="text-xs text-[#94A3B8] text-center">Next Due</span>
@@ -210,7 +204,7 @@ export default function FriendDetailPage() {
             ) : (
               <p className="text-sm text-[#64748B]">
                 Connect every{" "}
-                <span className="font-bold text-[#1a1a1a]">{goalValue} days</span>
+                <span className="font-bold text-[#244D3F]">{goalValue} days</span>
               </p>
             )}
           </div>

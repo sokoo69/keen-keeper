@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import {
   PieChart,
@@ -9,7 +10,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Phone, MessageSquare, Video } from "lucide-react";
 import { getTimeline, initializeTimeline } from "@/lib/timelineStore";
 
 const COLORS = {
@@ -69,9 +69,9 @@ export default function StatsPage() {
   ].filter((d) => d.value > 0);
 
   const statCards = [
-    { label: "Total Calls", value: counts.call, icon: Phone, color: "#244D3F" },
-    { label: "Total Texts", value: counts.text, icon: MessageSquare, color: "#6366F1" },
-    { label: "Total Videos", value: counts.video, icon: Video, color: "#10B981" },
+    { label: "Total Calls", value: counts.call, icon: "/assets/call.png", color: "#244D3F" },
+    { label: "Total Texts", value: counts.text, icon: "/assets/text.png", color: "#6366F1" },
+    { label: "Total Videos", value: counts.video, icon: "/assets/video.png", color: "#10B981" },
   ];
 
   return (
@@ -86,7 +86,7 @@ export default function StatsPage() {
       </div>
 
       <div className="grid grid-cols-3 gap-4 mb-6">
-        {statCards.map(({ label, value, icon: Icon, color }) => (
+        {statCards.map(({ label, value, icon, color }) => (
           <div
             key={label}
             className="bg-white rounded-2xl border border-[#E9E9E9] p-5 flex flex-col items-center gap-2 shadow-sm"
@@ -95,9 +95,15 @@ export default function StatsPage() {
               className="w-10 h-10 rounded-full flex items-center justify-center"
               style={{ backgroundColor: `${color}15` }}
             >
-              <Icon size={18} style={{ color }} />
+              <Image
+                src={icon}
+                alt={label}
+                width={18}
+                height={18}
+                className="w-4.5 h-4.5 object-contain"
+              />
             </div>
-            <span className="text-2xl font-black text-[#1a1a1a]">{value}</span>
+            <span className="text-2xl font-black text-[#244D3F]">{value}</span>
             <span className="text-xs text-[#94A3B8] text-center">{label}</span>
           </div>
         ))}

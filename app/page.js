@@ -84,7 +84,7 @@ export default function HomePage() {
             key={label}
             className="bg-white rounded-xl border border-[#E9E9E9] py-5 px-4 flex flex-col items-center gap-1"
           >
-            <span className="font-bold text-3xl text-[#1a1a1a]">{value}</span>
+            <span className="font-bold text-3xl text-[#244D3F]">{value}</span>
             <span className="text-[#94A3B8] text-xs text-center">{label}</span>
           </div>
         ))}
