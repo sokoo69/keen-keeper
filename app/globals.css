@@ -22,13 +22,11 @@ body {
   font-family: var(--font-geist), system-ui, sans-serif;
 }
 
-/* Smooth transitions globally */
 a,
 button {
   transition: all 0.2s ease;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -43,7 +41,6 @@ button {
   background: #a1a1a1;
 }
 
-/* Loading spinner */
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -66,7 +63,6 @@ button {
   border-radius: 8px;
 }
 
-/* Toast custom */
 .go2072408551 {
   min-width: 280px;
 }

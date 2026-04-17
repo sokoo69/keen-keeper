@@ -23,32 +23,32 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#E9E9E9]">
-      <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+      <nav className="w-full px-4 sm:px-6 lg:px-10 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center select-none">
           <Image
             src="/assets/logo.png"
             alt="KeenKeeper"
-            width={140}
-            height={40}
-            className="h-8 w-auto object-contain"
+            width={124}
+            height={28}
+            className="h-7 w-auto object-contain"
             priority
           />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-1">
+        <ul className="hidden md:flex items-center gap-0.5">
           {navLinks.map(({ href, label, icon: Icon }) => {
             const active = isActive(href);
             return (
               <li key={href}>
                 <Link
                   href={href}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-150 ${
+                  className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium transition-all duration-150 ${
                     active
                       ? "bg-[#244D3F] text-white"
-                      : "text-[#64748B] hover:text-[#244D3F] hover:bg-[#244D3F]/10"
+                      : "text-[#7A8794] hover:text-[#244D3F] hover:bg-[#244D3F]/10"
                   }`}
                 >
-                  <Icon size={14} />
+                  <Icon size={11} strokeWidth={2.2} />
                   {label}
                 </Link>
               </li>
@@ -57,7 +57,7 @@ export default function Navbar() {
         </ul>
 
         <button
-          className="md:hidden p-2 rounded-lg text-[#64748B] hover:bg-gray-100"
+          className="md:hidden p-1.5 rounded-md text-[#64748B] hover:bg-gray-100"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
